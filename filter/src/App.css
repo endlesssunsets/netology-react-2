@@ -1,0 +1,56 @@
+#root {
+  max-width: 980px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+}
+
+.portfolio {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.project-list {
+    display: flex;
+    flex-direction: row;
+    place-content: stretch center;
+    box-sizing: border-box;
+    width: 100%;
+    gap: 10px;
+}
+
+.project-list .column {
+    display: flex;
+    flex-direction: column;
+    place-content: stretch flex-start;
+    flex: 1 1 0%;
+    width: 0px;
+    gap: 10px;
+}
+
+.project-list .column {
+    display: flex;
+    justify-content: stretch;
+}
+
+.toolbar {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.toolbar * {
+    padding: 5px 10px;
+    outline: 1px solid gray;
+    user-select: none;
+    transition: 0.3s;
+}
+.toolbar *:hover {
+    cursor: pointer;
+}
+.active-filter {
+    background-color: gray;
+    color: white;
+}
