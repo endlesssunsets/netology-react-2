@@ -1,0 +1,101 @@
+@import url("https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined");
+
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.shop-item {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    height: 45px;
+    padding: 25px;
+    background-color: rgb(243, 243, 243);
+    user-select: none;
+}
+
+.shop-item img {
+    object-fit: cover;
+    object-position: 100% 65%;
+}
+
+.shop-item .title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.shop-item .price {
+    color: red;
+    font-size: 20px;
+}
+
+.shop-card {
+    height: 100%;
+    width: 100%;
+    min-width: 300px;
+    padding: 25px 0;
+    background-color: rgb(243, 243, 243);
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.shop-card .header {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.shop-card .header .title {
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.shop-card img {
+    object-fit: cover;
+    object-position: 100% 65%;
+}
+
+.shop-card .order {
+    display: flex;
+    gap: 5rem;
+    align-items: center;
+}
+
+.list-view {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    width: 100%;
+}
+
+.icon-switch {
+    user-select: none;
+    float: right;
+    padding-bottom: 25px;
+}
+
+.cards-view {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, minmax(250px, 1fr));
+    gap: 10rem;
+    user-select: none;
+}
+
+.add-to-cart {
+    color: red;
+    padding: 10px 15px;
+    border: 1px solid red;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
